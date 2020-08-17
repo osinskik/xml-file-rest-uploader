@@ -1,6 +1,6 @@
-#Example Spring Boot program for updating XML files
+# Example Spring Boot program for updating XML files
 
-##Endpoint description
+## Endpoint description
 ### GET /epaperrequest
 Provides all documents. 
 ```shell script
@@ -63,7 +63,7 @@ Example request:
 curl -XPOST -F 'file=@./file.xml' "http://localhost:8080/epaperrequest/upload"
 ```
 
-#Example usage with MongoDB
+# Example usage with MongoDB
 1. Build an image in main folder:
 ```shell script
 mvn spring-boot:build-image -Dspring-boot.build-image.imageName=osinskik/xml-file-rest-uploader
