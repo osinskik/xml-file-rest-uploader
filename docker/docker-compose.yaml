@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mongo-db:
+    image: mongo:3.6
+    container_name: 'mongo-db'
+    ports:
+      - 27017:27017
+    command: --smallfiles
+  api:
+    image: osinskik/xml-file-rest-uploader
+    ports:
+      - 8080:8080
+    links:
+      - mongo-db
